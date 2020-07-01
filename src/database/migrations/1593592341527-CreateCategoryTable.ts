@@ -6,7 +6,7 @@ export class CreateCategoryTable1593592341527 implements MigrationInterface {
         await queryRunner.createTable(new Table({
             name: 'categories',
             columns: [
-                { name: 'id', type: 'uuid', isPrimary:true, generationStrategy:'uuid', default: 'desafio06.uuid_generate_v4()' },
+                { name: 'id', type: 'uuid', isPrimary:true, generationStrategy:'uuid', default: 'uuid_generate_v4()' },
                 { name: 'title', type: 'varchar', isNullable:false, isUnique:true },
                 { name: 'created_at', type: 'timestamp', default:'now()' },
                 { name: 'updated_at', type: 'timestamp', default:'now()' }

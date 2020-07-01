@@ -6,7 +6,7 @@ export class CreateTransactionTable1593592278575 implements MigrationInterface {
         await queryRunner.createTable(new Table({
             name: 'transactions',
             columns: [
-                { name: 'id', type: 'uuid', isPrimary:true, generationStrategy:'uuid', default:'desafio06.uuid_generate_v4()' },
+                { name: 'id', type: 'uuid', isPrimary:true, generationStrategy:'uuid', default:'uuid_generate_v4()' },
                 { name: 'title', type: 'varchar', isNullable:false },
                 { name: 'type', type: 'varchar', isNullable:false },
                 { name: 'value', type: 'real', isNullable:false },
